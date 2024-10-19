@@ -1,19 +1,3 @@
-from transformers import T5ForConditionalGeneration, T5Tokenizer
-
-
-# Load pre-trained T5 model and tokenizer
-
-model = T5ForConditionalGeneration.from_pretrained("t5-small")
-
-tokenizer = T5Tokenizer.from_pretrained("t5-small")
-
-
-# Sample Russian text
-
-file = open(r'C:/Users/user/Desktop/github/summarization/chunk_1.txt', encoding='utf-8')
-# print(type(file))
-text = file.read()
-
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -52,4 +36,9 @@ def extractive_summarization(text):
 
 # Пример использования
 
+# Sample Russian text
+
+file = open(r'C:/Users/user/Desktop/github/summarization/chunk_1.txt', encoding='utf-8')
+# print(type(file))
+text = file.read()
 print(extractive_summarization(text))
