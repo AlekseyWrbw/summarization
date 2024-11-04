@@ -17,7 +17,7 @@ def fb2_to_txt(fb2_file, txt_file):
         file.write(full_text)
 
 # Пример использования
-fb2_file = r'C:\Users\user\Downloads\sergej_mihajlovich_sergeev-russkoe_samovl-64a697905079d.fb2\Sergeev_Russkoe-samovlastie-Vlast-i-eyo-granicy-1462-1917-gg-.M2wZYg.739853.fb2'  # Укажите путь к вашему FB2 файлу
+fb2_file = r'C:\Users\user\Downloads\slavoj_zhizhek-sobitie_filosofskoe_puteshes-620777488d118.fb\Zhizhek_Sobytie-Filosofskoe-puteshestvie-po-konceptu.pEAlvg.610317.fb2'  # Укажите путь к вашему FB2 файлу
 txt_file = r'C:\Users\user\Downloads\output.txt'      # Укажите имя выходного TXT файла
 fb2_to_txt(fb2_file, txt_file)
 
